@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentRoot">
+
+    <fragment
+        android:id="@+id/fragmentRoot"
+        android:name="com.dk.empatweatherapp.model.root.FragmentRoot"
+        android:label="fragment_root"
+        tools:layout="@layout/fragment_root" />
+    <fragment
+        android:id="@+id/citiFragment"
+        android:name="com.dk.empatweatherapp.screens.cities.CitiFragment"
+        android:label="fragment_city"
+        tools:layout="@layout/fragment_city" />
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.dk.empatweatherapp.screens.main.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+</navigation>
